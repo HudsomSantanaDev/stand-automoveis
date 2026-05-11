@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteRule ^carros$ carros.php
+RewriteRule ^conta-criada$ conta-criada.php
+RewriteRule ^contactos$ contactos.php
+RewriteRule ^vender$ vender.php
+RewriteRule ^terminar-sessao$ terminar-sessao.php
+RewriteRule ^notificacoes$ notificacoes.php
+RewriteRule ^responder$ responder.php
+RewriteRule ^iniciar-sessao$ login.php
+RewriteRule ^registo$ registo.php
+
+
+RewriteRule ^carro/([0-9]+)$ carro.php?id=$1
+
+RewriteRule ^responder/([0-9]+)$ responder.php?id=$1
+
+
+
+ErrorDocument 404 http://localhost/meusdocs/php/teste-stand-idiomas/stand/404.php
